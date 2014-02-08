@@ -1,0 +1,53 @@
+html{ height: 100%; overflow-y: scroll;}
+body{ background: #f7f7f7; font-family: Verdana, Arial, sans-serif; font-size: 11px; min-height: 100%;}
+h1{ font-size: 20px; font-weight: bold; letter-spacing: -0.05em; margin: 20px;}
+
+table{ margin-top: 20px; width: 100%;}
+td{ border-top: 1px solid #ccc; padding: 0.5em;}
+tr:hover td,
+tr:hover + tr td{ border-top: 1px solid black;}
+
+.btn-toolbar{ margin: 0 15px;}
+
+.all, .bronze, .gold{ background: lightyellow; display: table-row; font-size: 1.25em; font-weight: bold;}
+.past{ background: #ccc; color: #666; display: none;}
+.day{ text-align: right; width: 2em;}
+.hour{ width: 5em;}
+.sport{ border-top-color: transparent; color: white; width: 15em;}
+.gender{ text-align: center; width: 2em;}
+
+#sports .btn.active{ color: white;}
+
+.ih .sport, .active.btn-ih{ background: #357002; border-color: #357002;}
+.ss .sport, .active.btn-ss{ background: #049d35; border-color: #049d35;}
+.st .sport, .active.btn-st{ background: #92bc2c; border-color: #92bc2c;}
+.fs .sport, .active.btn-fs{ background: #ffd900; border-color: #ffd900;}
+.cu .sport, .active.btn-cu{ background: #f2a700; border-color: #f2a700;}
+.bt .sport, .active.btn-bt{ background: #e75700; border-color: #e75700;}
+.cc .sport, .active.btn-cc{ background: #de0000; border-color: #de0000;}
+.sj .sport, .active.btn-sj{ background: #c0003e; border-color: #c0003e;}
+.nc .sport, .active.btn-nc{ background: #ff0052; border-color: #ff0052;}
+.as .sport, .active.btn-as{ background: #8c2083; border-color: #8c2083;}
+.fr .sport, .active.btn-fr{ background: #360988; border-color: #360988;}
+.sb .sport, .active.btn-sb{ background: #19a3d4; border-color: #19a3d4;}
+.bs .sport, .active.btn-bs{ background: #006fae; border-color: #006fae;}
+.sn .sport, .active.btn-sn{ background: #003993; border-color: #003993;}
+.lg .sport, .active.btn-lg{ background: #017eff; border-color: #017eff;}
+
+.btn-ih{ color: #357002;}
+.btn-ss{ color: #049d35;}
+.btn-st{ color: #92bc2c;}
+.btn-fs{ color: #ffd900;}
+.btn-cu{ color: #f2a700;}
+.btn-bt{ color: #e75700;}
+.btn-cc{ color: #de0000;}
+.btn-sj{ color: #c0003e;}
+.btn-nc{ color: #ff0052;}
+.btn-as{ color: #8c2083;}
+.btn-fr{ color: #360988;}
+.btn-sb{ color: #19a3d4;}
+.btn-bs{ color: #006fae;}
+.btn-sn{ color: #003993;}
+.btn-lg{ color: #017eff;}
+
+.past .sport{ background: #999; border-color: #999;}

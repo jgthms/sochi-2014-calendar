@@ -1,0 +1,932 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Sochi 2014 Olympics Calendar</title>
+    <meta name="description" content="A simple calendar for the Sochi 2014 Olympics">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="http://fonts.googleapis.com/css?family=Open+Sans:400,300,700" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+      <h1>Sochi 2014 Calendar</h1>
+      <div class="btn-toolbar">
+        <div id="sports" class="btn-group btn-group-sm">
+          <button type="button" class="btn btn-default btn-as active" data-sport="as" data-toggle="tooltip" data-placement="top" data-container="body" title="Alpine Skiing">AS</button>
+          <button type="button" class="btn btn-default btn-bt active" data-sport="bt" data-toggle="tooltip" data-placement="top" data-container="body" title="Biathlon">BT</button>
+          <button type="button" class="btn btn-default btn-bs active" data-sport="bs" data-toggle="tooltip" data-placement="top" data-container="body" title="Bobsleigh">BS</button>
+          <button type="button" class="btn btn-default btn-cc active" data-sport="cc" data-toggle="tooltip" data-placement="top" data-container="body" title="Cross-Country">CC</button>
+          <button type="button" class="btn btn-default btn-cu active" data-sport="cu" data-toggle="tooltip" data-placement="top" data-container="body" title="Curling">CU</button>
+          <button type="button" class="btn btn-default btn-fs active" data-sport="fs" data-toggle="tooltip" data-placement="top" data-container="body" title="Figure Skating">FS</button>
+          <button type="button" class="btn btn-default btn-fr active" data-sport="fr" data-toggle="tooltip" data-placement="top" data-container="body" title="Freestyle Skiing">FR</button>
+          <button type="button" class="btn btn-default btn-ih active" data-sport="ih" data-toggle="tooltip" data-placement="top" data-container="body" title="Ice Hockey">IH</button>
+          <button type="button" class="btn btn-default btn-lg active" data-sport="lg" data-toggle="tooltip" data-placement="top" data-container="body" title="Luge">LG</button>
+          <button type="button" class="btn btn-default btn-nc active" data-sport="nc" data-toggle="tooltip" data-placement="top" data-container="body" title="Nordic Combined">NC</button>
+          <button type="button" class="btn btn-default btn-st active" data-sport="st" data-toggle="tooltip" data-placement="top" data-container="body" title="Short Track">ST</button>
+          <button type="button" class="btn btn-default btn-sn active" data-sport="sn" data-toggle="tooltip" data-placement="top" data-container="body" title="Skeleton">SN</button>
+          <button type="button" class="btn btn-default btn-sj active" data-sport="sj" data-toggle="tooltip" data-placement="top" data-container="body" title="Ski Jumping">SJ</button>
+          <button type="button" class="btn btn-default btn-sb active" data-sport="sb" data-toggle="tooltip" data-placement="top" data-container="body" title="Snowboard">SB</button>
+          <button type="button" class="btn btn-default btn-ss active" data-sport="ss" data-toggle="tooltip" data-placement="top" data-container="body" title="Speed Skating">SS</button>
+        </div>
+        <div id="filters" class="btn-group btn-group-sm">
+          <button id="past" type="button" class="btn btn-default" data-view="past">Show past events</button>
+          <button id="finals" type="button" class="btn btn-default" data-view="all">Show only finals</button>
+        </div>
+      </div>
+      <table>
+        <tbody>
+          <tr class="sb none" data-time="1391837400000">
+            <td class="day">8</td>
+            <td class="hour">05:30</td>
+            <td class="sport">Snowboard</td>
+            <td class="name">Men's Slopestyle Semifinals</td>
+            <td class="gender">M</td>
+          </tr>
+          <tr class="ih none" data-time="1391846400000">
+            <td class="day">8</td>
+            <td class="hour">08:00</td>
+            <td class="sport">Ice Hockey</td>
+            <td class="name">Women's Prelim. Round - Group A</td>
+            <td class="gender"></td>
+          </tr>
+          <tr class="cc all" data-time="1391853600000">
+            <td class="day">8</td>
+            <td class="hour">10:00</td>
+            <td class="sport">Cross-Country</td>
+            <td class="name">Ladies' Skiathlon 7.5 km Classic + 7.5 km Free</td>
+            <td class="gender">W</td>
+          </tr>
+          <tr class="ss all" data-time="1391859000000">
+            <td class="day">8</td>
+            <td class="hour">11:30</td>
+            <td class="sport">Speed Skating</td>
+            <td class="name">Men's 5000 m</td>
+            <td class="gender">M</td>
+          </tr>
+          <tr class="fr none" data-time="1391868000000">
+            <td class="day">8</td>
+            <td class="hour">14:00</td>
+            <td class="sport">Freestyle Skiing</td>
+            <td class="name">Ladies' Moguls Qualification 2</td>
+            <td class="gender">W</td>
+          </tr>
+          <tr class="lg none" data-time="1391869800000">
+            <td class="day">8</td>
+            <td class="hour">14:30</td>
+            <td class="sport">Luge</td>
+            <td class="name">Men's Singles Run 1</td>
+            <td class="gender">M</td>
+          </tr>
+          <tr class="sj none" data-time="1391877000000">
+            <td class="day">8</td>
+            <td class="hour">16:30</td>
+            <td class="sport">Ski Jumping</td>
+            <td class="name">Men's Normal Hill Individual Qualification Round</td>
+            <td class="gender">M</td>
+          </tr>
+          <tr class="sb none" data-time="1391927400000">
+            <td class="day">9</td>
+            <td class="hour">06:30</td>
+            <td class="sport">Snowboard</td>
+            <td class="name">Ladies' Slopestyle Semifinals</td>
+            <td class="gender">W</td>
+          </tr>
+          <tr class="as all" data-time="1391929200000">
+            <td class="day">9</td>
+            <td class="hour">07:00</td>
+            <td class="sport">Alpine Skiing</td>
+            <td class="name">Men's Downhill</td>
+            <td class="gender">M</td>
+          </tr>
+          <tr class="ih none" data-time="1391932800000">
+            <td class="day">9</td>
+            <td class="hour">08:00</td>
+            <td class="sport">Ice Hockey</td>
+            <td class="name">Women's Prelim. Round - Group B</td>
+            <td class="gender"></td>
+          </tr>
+          <tr class="cc all" data-time="1391940000000">
+            <td class="day">9</td>
+            <td class="hour">10:00</td>
+            <td class="sport">Cross-Country</td>
+            <td class="name">Men's Skiathlon 15 km Classic + 15 km Free</td>
+            <td class="gender">M</td>
+          </tr>
+          <tr class="ss all" data-time="1391945400000">
+            <td class="day">9</td>
+            <td class="hour">11:30</td>
+            <td class="sport">Speed Skating</td>
+            <td class="name">Ladies' 3000 m</td>
+            <td class="gender">W</td>
+          </tr>
+          <tr class="lg none" data-time="1391956200000">
+            <td class="day">9</td>
+            <td class="hour">14:30</td>
+            <td class="sport">Luge</td>
+            <td class="name">Men's Singles Run 3</td>
+            <td class="gender">M</td>
+          </tr>
+          <tr class="fs none" data-time="1391958000000">
+            <td class="day">9</td>
+            <td class="hour">15:00</td>
+            <td class="sport">Figure Skating</td>
+            <td class="name">Team Men Free Skating</td>
+            <td class="gender">X</td>
+          </tr>
+          <tr class="sj none" data-time="1391967000000">
+            <td class="day">9</td>
+            <td class="hour">17:30</td>
+            <td class="sport">Ski Jumping</td>
+            <td class="name">Men's Normal Hill Individual 1st Round</td>
+            <td class="gender">M</td>
+          </tr>
+          <tr class="cu none" data-time="1392008400000">
+            <td class="day">10</td>
+            <td class="hour">05:00</td>
+            <td class="sport">Curling</td>
+            <td class="name">Men's Round Robin Session 1</td>
+            <td class="gender"></td>
+          </tr>
+          <tr class="as none" data-time="1392015600000">
+            <td class="day">10</td>
+            <td class="hour">07:00</td>
+            <td class="sport">Alpine Skiing</td>
+            <td class="name">Women's Super Combined Downhill</td>
+            <td class="gender">W</td>
+          </tr>
+          <tr class="ih none" data-time="1392026400000">
+            <td class="day">10</td>
+            <td class="hour">10:00</td>
+            <td class="sport">Ice Hockey</td>
+            <td class="name">Women's Prelim. Round - Group A</td>
+            <td class="gender"></td>
+          </tr>
+          <tr class="st all" data-time="1392033900000">
+            <td class="day">10</td>
+            <td class="hour">12:05</td>
+            <td class="sport">Short Track</td>
+            <td class="name">Men's 1500 m Finals</td>
+            <td class="gender">M</td>
+          </tr>
+          <tr class="ss none" data-time="1392037200000">
+            <td class="day">10</td>
+            <td class="hour">13:00</td>
+            <td class="sport">Speed Skating</td>
+            <td class="name">Men's 500 m Race 1 of 2</td>
+            <td class="gender">M</td>
+          </tr>
+          <tr class="fr none" data-time="1392040800000">
+            <td class="day">10</td>
+            <td class="hour">14:00</td>
+            <td class="sport">Freestyle Skiing</td>
+            <td class="name">Men's Moguls Qualification 1</td>
+            <td class="gender">M</td>
+          </tr>
+          <tr class="lg none" data-time="1392043500000">
+            <td class="day">10</td>
+            <td class="hour">14:45</td>
+            <td class="sport">Luge</td>
+            <td class="name">Women's Singles Run 1</td>
+            <td class="gender">W</td>
+          </tr>
+          <tr class="bt all" data-time="1392044400000">
+            <td class="day">10</td>
+            <td class="hour">15:00</td>
+            <td class="sport">Biathlon</td>
+            <td class="name">Men's 12.5 km Pursuit</td>
+            <td class="gender">M</td>
+          </tr>
+          <tr class="cu none" data-time="1392094800000">
+            <td class="day">11</td>
+            <td class="hour">05:00</td>
+            <td class="sport">Curling</td>
+            <td class="name">Women's Round Robin Session 2</td>
+            <td class="gender"></td>
+          </tr>
+          <tr class="fr none" data-time="1392098400000">
+            <td class="day">11</td>
+            <td class="hour">06:00</td>
+            <td class="sport">Freestyle Skiing</td>
+            <td class="name">Ladies' Ski Slopestyle Qualification</td>
+            <td class="gender">W</td>
+          </tr>
+          <tr class="sb none" data-time="1392112800000">
+            <td class="day">11</td>
+            <td class="hour">10:00</td>
+            <td class="sport">Snowboard</td>
+            <td class="name">Men's Halfpipe Qualification</td>
+            <td class="gender">M</td>
+          </tr>
+          <tr class="ss none" data-time="1392122700000">
+            <td class="day">11</td>
+            <td class="hour">12:45</td>
+            <td class="sport">Speed Skating</td>
+            <td class="name">Ladies' 500 m Race 1 of 2</td>
+            <td class="gender">W</td>
+          </tr>
+          <tr class="lg none" data-time="1392129000000">
+            <td class="day">11</td>
+            <td class="hour">14:30</td>
+            <td class="sport">Luge</td>
+            <td class="name">Women's Singles Run 3</td>
+            <td class="gender">W</td>
+          </tr>
+          <tr class="fs none" data-time="1392130800000">
+            <td class="day">11</td>
+            <td class="hour">15:00</td>
+            <td class="sport">Figure Skating</td>
+            <td class="name">Pairs Short Program</td>
+            <td class="gender">X</td>
+          </tr>
+          <tr class="sj none" data-time="1392139800000">
+            <td class="day">11</td>
+            <td class="hour">17:30</td>
+            <td class="sport">Ski Jumping</td>
+            <td class="name">Ladies' Normal Hill Individual 1st Round</td>
+            <td class="gender">W</td>
+          </tr>
+          <tr class="cu none" data-time="1392181200000">
+            <td class="day">12</td>
+            <td class="hour">05:00</td>
+            <td class="sport">Curling</td>
+            <td class="name">Men's Round Robin Session 4</td>
+            <td class="gender"></td>
+          </tr>
+          <tr class="as all" data-time="1392188400000">
+            <td class="day">12</td>
+            <td class="hour">07:00</td>
+            <td class="sport">Alpine Skiing</td>
+            <td class="name">Women's Downhill</td>
+            <td class="gender">W</td>
+          </tr>
+          <tr class="ih none" data-time="1392192000000">
+            <td class="day">12</td>
+            <td class="hour">08:00</td>
+            <td class="sport">Ice Hockey</td>
+            <td class="name">Women's Prelim. Round - Group A</td>
+            <td class="gender"></td>
+          </tr>
+          <tr class="nc none" data-time="1392197400000">
+            <td class="day">12</td>
+            <td class="hour">09:30</td>
+            <td class="sport">Nordic Combined</td>
+            <td class="name">Individual Gundersen NH / 10 km, Competition Round</td>
+            <td class="gender">M</td>
+          </tr>
+          <tr class="sb none" data-time="1392199200000">
+            <td class="day">12</td>
+            <td class="hour">10:00</td>
+            <td class="sport">Snowboard</td>
+            <td class="name">Ladies' Halfpipe Qualification</td>
+            <td class="gender">W</td>
+          </tr>
+          <tr class="ss all" data-time="1392213600000">
+            <td class="day">12</td>
+            <td class="hour">14:00</td>
+            <td class="sport">Speed Skating</td>
+            <td class="name">Men's 1000 m</td>
+            <td class="gender">M</td>
+          </tr>
+          <tr class="lg none" data-time="1392214500000">
+            <td class="day">12</td>
+            <td class="hour">14:15</td>
+            <td class="sport">Luge</td>
+            <td class="name">Doubles Run 1</td>
+            <td class="gender">X</td>
+          </tr>
+          <tr class="fs all" data-time="1392219900000">
+            <td class="day">12</td>
+            <td class="hour">15:45</td>
+            <td class="sport">Figure Skating</td>
+            <td class="name">Pairs Free Skating</td>
+            <td class="gender">X</td>
+          </tr>
+          <tr class="cu none" data-time="1392267600000">
+            <td class="day">13</td>
+            <td class="hour">05:00</td>
+            <td class="sport">Curling</td>
+            <td class="name">Women's Round Robin Session 5</td>
+            <td class="gender"></td>
+          </tr>
+          <tr class="fr none" data-time="1392272100000">
+            <td class="day">13</td>
+            <td class="hour">06:15</td>
+            <td class="sport">Freestyle Skiing</td>
+            <td class="name">Men's Ski Slopestyle Qualification</td>
+            <td class="gender">M</td>
+          </tr>
+          <tr class="sn none" data-time="1392276600000">
+            <td class="day">13</td>
+            <td class="hour">07:30</td>
+            <td class="sport">Skeleton</td>
+            <td class="name">Women's Heat 1</td>
+            <td class="gender">W</td>
+          </tr>
+          <tr class="ih none" data-time="1392278400000">
+            <td class="day">13</td>
+            <td class="hour">08:00</td>
+            <td class="sport">Ice Hockey</td>
+            <td class="name">Women's Prelim. Round - Group B</td>
+            <td class="gender"></td>
+          </tr>
+          <tr class="cc all" data-time="1392285600000">
+            <td class="day">13</td>
+            <td class="hour">10:00</td>
+            <td class="sport">Cross-Country</td>
+            <td class="name">Ladies' 10km Classic</td>
+            <td class="gender">W</td>
+          </tr>
+          <tr class="st none" data-time="1392287100000">
+            <td class="day">13</td>
+            <td class="hour">10:25</td>
+            <td class="sport">Short Track</td>
+            <td class="name">Men's 1000 m Heats</td>
+            <td class="gender">M</td>
+          </tr>
+          <tr class="ss all" data-time="1392300000000">
+            <td class="day">13</td>
+            <td class="hour">14:00</td>
+            <td class="sport">Speed Skating</td>
+            <td class="name">Ladies' 1000 m</td>
+            <td class="gender">W</td>
+          </tr>
+          <tr class="fs none" data-time="1392303600000">
+            <td class="day">13</td>
+            <td class="hour">15:00</td>
+            <td class="sport">Figure Skating</td>
+            <td class="name">Men Short Program</td>
+            <td class="gender">M</td>
+          </tr>
+          <tr class="lg all" data-time="1392308100000">
+            <td class="day">13</td>
+            <td class="hour">16:15</td>
+            <td class="sport">Luge</td>
+            <td class="name">Team Relay Competition</td>
+            <td class="gender">X</td>
+          </tr>
+          <tr class="cu none" data-time="1392354000000">
+            <td class="day">14</td>
+            <td class="hour">05:00</td>
+            <td class="sport">Curling</td>
+            <td class="name">Men's Round Robin Session 7</td>
+            <td class="gender"></td>
+          </tr>
+          <tr class="as none" data-time="1392361200000">
+            <td class="day">14</td>
+            <td class="hour">07:00</td>
+            <td class="sport">Alpine Skiing</td>
+            <td class="name">Men's Super Combined Downhill</td>
+            <td class="gender">M</td>
+          </tr>
+          <tr class="ih none" data-time="1392364800000">
+            <td class="day">14</td>
+            <td class="hour">08:00</td>
+            <td class="sport">Ice Hockey</td>
+            <td class="name">Men's Prelim. Round - Group C</td>
+            <td class="gender"></td>
+          </tr>
+          <tr class="cc all" data-time="1392372000000">
+            <td class="day">14</td>
+            <td class="hour">10:00</td>
+            <td class="sport">Cross-Country</td>
+            <td class="name">Men's 15km Classic</td>
+            <td class="gender">M</td>
+          </tr>
+          <tr class="sn none" data-time="1392381000000">
+            <td class="day">14</td>
+            <td class="hour">12:30</td>
+            <td class="sport">Skeleton</td>
+            <td class="name">Men's Heat 1</td>
+            <td class="gender">M</td>
+          </tr>
+          <tr class="fr none" data-time="1392385500000">
+            <td class="day">14</td>
+            <td class="hour">13:45</td>
+            <td class="sport">Freestyle Skiing</td>
+            <td class="name">Ladies' Aerials Qualification 1</td>
+            <td class="gender">W</td>
+          </tr>
+          <tr class="bt all" data-time="1392386400000">
+            <td class="day">14</td>
+            <td class="hour">14:00</td>
+            <td class="sport">Biathlon</td>
+            <td class="name">Women's 15km Individual</td>
+            <td class="gender">W</td>
+          </tr>
+          <tr class="fs all" data-time="1392390000000">
+            <td class="day">14</td>
+            <td class="hour">15:00</td>
+            <td class="sport">Figure Skating</td>
+            <td class="name">Men Free Skating</td>
+            <td class="gender">M</td>
+          </tr>
+          <tr class="sj none" data-time="1392399000000">
+            <td class="day">14</td>
+            <td class="hour">17:30</td>
+            <td class="sport">Ski Jumping</td>
+            <td class="name">Men's Large Hill Individual Qualification Round</td>
+            <td class="gender">M</td>
+          </tr>
+          <tr class="cu none" data-time="1392440400000">
+            <td class="day">15</td>
+            <td class="hour">05:00</td>
+            <td class="sport">Curling</td>
+            <td class="name">Women's Round Robin Session 8</td>
+            <td class="gender"></td>
+          </tr>
+          <tr class="as all" data-time="1392447600000">
+            <td class="day">15</td>
+            <td class="hour">07:00</td>
+            <td class="sport">Alpine Skiing</td>
+            <td class="name">Women's Super-G</td>
+            <td class="gender">W</td>
+          </tr>
+          <tr class="ih none" data-time="1392451200000">
+            <td class="day">15</td>
+            <td class="hour">08:00</td>
+            <td class="sport">Ice Hockey</td>
+            <td class="name">Men's Prelim. Round - Group A</td>
+            <td class="gender"></td>
+          </tr>
+          <tr class="cc all" data-time="1392458400000">
+            <td class="day">15</td>
+            <td class="hour">10:00</td>
+            <td class="sport">Cross-Country</td>
+            <td class="name">Ladies' Relay 4x5 km</td>
+            <td class="gender">W</td>
+          </tr>
+          <tr class="st all" data-time="1392466800000">
+            <td class="day">15</td>
+            <td class="hour">12:20</td>
+            <td class="sport">Short Track</td>
+            <td class="name">Men's 1000 m Finals</td>
+            <td class="gender">M</td>
+          </tr>
+          <tr class="ss all" data-time="1392471000000">
+            <td class="day">15</td>
+            <td class="hour">13:30</td>
+            <td class="sport">Speed Skating</td>
+            <td class="name">Men's 1500 m</td>
+            <td class="gender">M</td>
+          </tr>
+          <tr class="sn none" data-time="1392475500000">
+            <td class="day">15</td>
+            <td class="hour">14:45</td>
+            <td class="sport">Skeleton</td>
+            <td class="name">Men's Heat 3</td>
+            <td class="gender">M</td>
+          </tr>
+          <tr class="sj none" data-time="1392485400000">
+            <td class="day">15</td>
+            <td class="hour">17:30</td>
+            <td class="sport">Ski Jumping</td>
+            <td class="name">Men's Large Hill Individual 1st Round</td>
+            <td class="gender">M</td>
+          </tr>
+          <tr class="cu none" data-time="1392526800000">
+            <td class="day">16</td>
+            <td class="hour">05:00</td>
+            <td class="sport">Curling</td>
+            <td class="name">Men's Round Robin Session 10</td>
+            <td class="gender"></td>
+          </tr>
+          <tr class="sb none" data-time="1392534000000">
+            <td class="day">16</td>
+            <td class="hour">07:00</td>
+            <td class="sport">Snowboard</td>
+            <td class="name">Ladies' Snowboard Cross Seeding</td>
+            <td class="gender">W</td>
+          </tr>
+          <tr class="ih none" data-time="1392537600000">
+            <td class="day">16</td>
+            <td class="hour">08:00</td>
+            <td class="sport">Ice Hockey</td>
+            <td class="name">Men's Prelim. Round - Group B</td>
+            <td class="gender"></td>
+          </tr>
+          <tr class="cc all" data-time="1392544800000">
+            <td class="day">16</td>
+            <td class="hour">10:00</td>
+            <td class="sport">Cross-Country</td>
+            <td class="name">Men’s Relay 4x10 km</td>
+            <td class="gender">M</td>
+          </tr>
+          <tr class="ss all" data-time="1392559200000">
+            <td class="day">16</td>
+            <td class="hour">14:00</td>
+            <td class="sport">Speed Skating</td>
+            <td class="name">Ladies' 1500 m</td>
+            <td class="gender">W</td>
+          </tr>
+          <tr class="fs none" data-time="1392562800000">
+            <td class="day">16</td>
+            <td class="hour">15:00</td>
+            <td class="sport">Figure Skating</td>
+            <td class="name">Ice Dance Short Dance</td>
+            <td class="gender">X</td>
+          </tr>
+          <tr class="bs none" data-time="1392567300000">
+            <td class="day">16</td>
+            <td class="hour">16:15</td>
+            <td class="sport">Bobsleigh</td>
+            <td class="name">Two-man Heat 1</td>
+            <td class="gender">M</td>
+          </tr>
+          <tr class="cu none" data-time="1392613200000">
+            <td class="day">17</td>
+            <td class="hour">05:00</td>
+            <td class="sport">Curling</td>
+            <td class="name">Women's Round Robin Session 11</td>
+            <td class="gender"></td>
+          </tr>
+          <tr class="sb none" data-time="1392620400000">
+            <td class="day">17</td>
+            <td class="hour">07:00</td>
+            <td class="sport">Snowboard</td>
+            <td class="name">Men's Snowboard Cross Seeding</td>
+            <td class="gender">M</td>
+          </tr>
+          <tr class="ih none" data-time="1392640200000">
+            <td class="day">17</td>
+            <td class="hour">12:30</td>
+            <td class="sport">Ice Hockey</td>
+            <td class="name">Women's Play-offs Semifinals</td>
+            <td class="gender"></td>
+          </tr>
+          <tr class="fr none" data-time="1392644700000">
+            <td class="day">17</td>
+            <td class="hour">13:45</td>
+            <td class="sport">Freestyle Skiing</td>
+            <td class="name">Men's Aerials Qualification 1</td>
+            <td class="gender">M</td>
+          </tr>
+          <tr class="bs none" data-time="1392647400000">
+            <td class="day">17</td>
+            <td class="hour">14:30</td>
+            <td class="sport">Bobsleigh</td>
+            <td class="name">Two-man Heat 3</td>
+            <td class="gender">M</td>
+          </tr>
+          <tr class="fs all" data-time="1392649200000">
+            <td class="day">17</td>
+            <td class="hour">15:00</td>
+            <td class="sport">Figure Skating</td>
+            <td class="name">Ice Dance Free Dance</td>
+            <td class="gender">X</td>
+          </tr>
+          <tr class="sj none" data-time="1392657300000">
+            <td class="day">17</td>
+            <td class="hour">17:15</td>
+            <td class="sport">Ski Jumping</td>
+            <td class="name">Men's Team 1st Round</td>
+            <td class="gender">M</td>
+          </tr>
+          <tr class="cu none" data-time="1392699600000">
+            <td class="day">18</td>
+            <td class="hour">05:00</td>
+            <td class="sport">Curling</td>
+            <td class="name">Women's Tie-breaker Session (if needed)</td>
+            <td class="gender"></td>
+          </tr>
+          <tr class="as none" data-time="1392706800000">
+            <td class="day">18</td>
+            <td class="hour">07:00</td>
+            <td class="sport">Alpine Skiing</td>
+            <td class="name">Women's Giant Slalom Run 1</td>
+            <td class="gender">W</td>
+          </tr>
+          <tr class="ih none" data-time="1392710400000">
+            <td class="day">18</td>
+            <td class="hour">08:00</td>
+            <td class="sport">Ice Hockey</td>
+            <td class="name">Men's Play-offs Qualifications</td>
+            <td class="gender"></td>
+          </tr>
+          <tr class="nc none" data-time="1392715800000">
+            <td class="day">18</td>
+            <td class="hour">09:30</td>
+            <td class="sport">Nordic Combined</td>
+            <td class="name">Individual Gundersen LH / 10 km, Competition Round</td>
+            <td class="gender">M</td>
+          </tr>
+          <tr class="st none" data-time="1392718500000">
+            <td class="day">18</td>
+            <td class="hour">10:15</td>
+            <td class="sport">Short Track</td>
+            <td class="name">Men's 500 m Heats</td>
+            <td class="gender">M</td>
+          </tr>
+          <tr class="ss all" data-time="1392728400000">
+            <td class="day">18</td>
+            <td class="hour">13:00</td>
+            <td class="sport">Speed Skating</td>
+            <td class="name">Men's 10000 m</td>
+            <td class="gender">M</td>
+          </tr>
+          <tr class="fr none" data-time="1392731100000">
+            <td class="day">18</td>
+            <td class="hour">13:45</td>
+            <td class="sport">Freestyle Skiing</td>
+            <td class="name">Men's Ski Halfpipe Qualification</td>
+            <td class="gender">M</td>
+          </tr>
+          <tr class="bs none" data-time="1392736500000">
+            <td class="day">18</td>
+            <td class="hour">15:15</td>
+            <td class="sport">Bobsleigh</td>
+            <td class="name">Women's Heat 1</td>
+            <td class="gender">W</td>
+          </tr>
+          <tr class="sb none" data-time="1392786900000">
+            <td class="day">19</td>
+            <td class="hour">05:15</td>
+            <td class="sport">Snowboard</td>
+            <td class="name">Ladies' Parallel Giant Slalom Qualification</td>
+            <td class="gender">W</td>
+          </tr>
+          <tr class="as none" data-time="1392793200000">
+            <td class="day">19</td>
+            <td class="hour">07:00</td>
+            <td class="sport">Alpine Skiing</td>
+            <td class="name">Men's Giant Slalom Run 1</td>
+            <td class="gender">M</td>
+          </tr>
+          <tr class="ih none" data-time="1392796800000">
+            <td class="day">19</td>
+            <td class="hour">08:00</td>
+            <td class="sport">Ice Hockey</td>
+            <td class="name">Men's Play-offs Quarterfinals</td>
+            <td class="gender"></td>
+          </tr>
+          <tr class="cc none" data-time="1392801300000">
+            <td class="day">19</td>
+            <td class="hour">09:15</td>
+            <td class="sport">Cross-Country</td>
+            <td class="name">Ladies' Team Sprint Classic Semifinals</td>
+            <td class="gender">W</td>
+          </tr>
+          <tr class="cu none" data-time="1392804000000">
+            <td class="day">19</td>
+            <td class="hour">10:00</td>
+            <td class="sport">Curling</td>
+            <td class="name">Women's Semifinal</td>
+            <td class="gender"></td>
+          </tr>
+          <tr class="ss all" data-time="1392816600000">
+            <td class="day">19</td>
+            <td class="hour">13:30</td>
+            <td class="sport">Speed Skating</td>
+            <td class="name">Ladies' 5000 m</td>
+            <td class="gender">W</td>
+          </tr>
+          <tr class="bt all" data-time="1392820200000">
+            <td class="day">19</td>
+            <td class="hour">14:30</td>
+            <td class="sport">Biathlon</td>
+            <td class="name">2x6km Women + 2x7.5 km Men Mixed Relay</td>
+            <td class="gender">X</td>
+          </tr>
+          <tr class="fs none" data-time="1392822000000">
+            <td class="day">19</td>
+            <td class="hour">15:00</td>
+            <td class="sport">Figure Skating</td>
+            <td class="name">Ladies Short Program</td>
+            <td class="gender">W</td>
+          </tr>
+          <tr class="bs none" data-time="1392826500000">
+            <td class="day">19</td>
+            <td class="hour">16:15</td>
+            <td class="sport">Bobsleigh</td>
+            <td class="name">Women's Heat 3</td>
+            <td class="gender">W</td>
+          </tr>
+          <tr class="fr none" data-time="1392882300000">
+            <td class="day">20</td>
+            <td class="hour">07:45</td>
+            <td class="sport">Freestyle Skiing</td>
+            <td class="name">Men's Ski Cross Seeding</td>
+            <td class="gender">M</td>
+          </tr>
+          <tr class="nc none" data-time="1392883200000">
+            <td class="day">20</td>
+            <td class="hour">08:00</td>
+            <td class="sport">Nordic Combined</td>
+            <td class="name">Team Gundersen LH / 4x5 km, Competition Round</td>
+            <td class="gender">M</td>
+          </tr>
+          <tr class="cu bronze" data-time="1392885000000">
+            <td class="day">20</td>
+            <td class="hour">08:30</td>
+            <td class="sport">Curling</td>
+            <td class="name">Women's Bronze Medal Game</td>
+            <td class="gender"></td>
+          </tr>
+          <tr class="ih bronze" data-time="1392897600000">
+            <td class="day">20</td>
+            <td class="hour">12:00</td>
+            <td class="sport">Ice Hockey</td>
+            <td class="name">Women's Bronze Medal Game</td>
+            <td class="gender"></td>
+          </tr>
+          <tr class="fs all" data-time="1392908400000">
+            <td class="day">20</td>
+            <td class="hour">15:00</td>
+            <td class="sport">Figure Skating</td>
+            <td class="name">Ladies Free Skating</td>
+            <td class="gender">W</td>
+          </tr>
+          <tr class="fr none" data-time="1392968700000">
+            <td class="day">21</td>
+            <td class="hour">07:45</td>
+            <td class="sport">Freestyle Skiing</td>
+            <td class="name">Ladies' Ski Cross Seeding</td>
+            <td class="gender">W</td>
+          </tr>
+          <tr class="cu bronze" data-time="1392971400000">
+            <td class="day">21</td>
+            <td class="hour">08:30</td>
+            <td class="sport">Curling</td>
+            <td class="name">Men's Bronze Medal Game</td>
+            <td class="gender"></td>
+          </tr>
+          <tr class="ih none" data-time="1392984000000">
+            <td class="day">21</td>
+            <td class="hour">12:00</td>
+            <td class="sport">Ice Hockey</td>
+            <td class="name">Men's Play-offs Semifinals</td>
+            <td class="gender"></td>
+          </tr>
+          <tr class="as none" data-time="1392986700000">
+            <td class="day">21</td>
+            <td class="hour">12:45</td>
+            <td class="sport">Alpine Skiing</td>
+            <td class="name">Women's Slalom Run 1</td>
+            <td class="gender">W</td>
+          </tr>
+          <tr class="ss none" data-time="1392989400000">
+            <td class="day">21</td>
+            <td class="hour">13:30</td>
+            <td class="sport">Speed Skating</td>
+            <td class="name">Men's Team Pursuit Quarterfinals</td>
+            <td class="gender">M</td>
+          </tr>
+          <tr class="bt all" data-time="1392993000000">
+            <td class="day">21</td>
+            <td class="hour">14:30</td>
+            <td class="sport">Biathlon</td>
+            <td class="name">Women's 4x6km Relay</td>
+            <td class="gender">W</td>
+          </tr>
+          <tr class="st all" data-time="1393004580000">
+            <td class="day">21</td>
+            <td class="hour">17:43</td>
+            <td class="sport">Short Track</td>
+            <td class="name">Men's 500 m Finals</td>
+            <td class="gender">M</td>
+          </tr>
+          <tr class="sb none" data-time="1393046100000">
+            <td class="day">22</td>
+            <td class="hour">05:15</td>
+            <td class="sport">Snowboard</td>
+            <td class="name">Ladies' Parallel Slalom Qualification</td>
+            <td class="gender">W</td>
+          </tr>
+          <tr class="cc all" data-time="1393061400000">
+            <td class="day">22</td>
+            <td class="hour">09:30</td>
+            <td class="sport">Cross-Country</td>
+            <td class="name">Ladies' 30 km Mass Start Free</td>
+            <td class="gender">W</td>
+          </tr>
+          <tr class="as none" data-time="1393073100000">
+            <td class="day">22</td>
+            <td class="hour">12:45</td>
+            <td class="sport">Alpine Skiing</td>
+            <td class="name">Men's Slalom Run 1</td>
+            <td class="gender">M</td>
+          </tr>
+          <tr class="ss none" data-time="1393075800000">
+            <td class="day">22</td>
+            <td class="hour">13:30</td>
+            <td class="sport">Speed Skating</td>
+            <td class="name">Ladies' Team Pursuit Semifinals</td>
+            <td class="gender">W</td>
+          </tr>
+          <tr class="bt all" data-time="1393079400000">
+            <td class="day">22</td>
+            <td class="hour">14:30</td>
+            <td class="sport">Biathlon</td>
+            <td class="name">Men's Relay 4x7.5 km</td>
+            <td class="gender">M</td>
+          </tr>
+          <tr class="ih bronze" data-time="1393081200000">
+            <td class="day">22</td>
+            <td class="hour">15:00</td>
+            <td class="sport">Ice Hockey</td>
+            <td class="name">Men's Bronze Medal Game</td>
+            <td class="gender"></td>
+          </tr>
+          <tr class="bs none" data-time="1393086600000">
+            <td class="day">22</td>
+            <td class="hour">16:30</td>
+            <td class="sport">Bobsleigh</td>
+            <td class="name">Four-man Heat 1</td>
+            <td class="gender">M</td>
+          </tr>
+          <tr class="cc all" data-time="1393138800000">
+            <td class="day">23</td>
+            <td class="hour">07:00</td>
+            <td class="sport">Cross-Country</td>
+            <td class="name">Men's 50 km Mass Start Free</td>
+            <td class="gender">M</td>
+          </tr>
+          <tr class="bs none" data-time="1393147800000">
+            <td class="day">23</td>
+            <td class="hour">09:30</td>
+            <td class="sport">Bobsleigh</td>
+            <td class="name">Four-man Heat 3</td>
+            <td class="gender">M</td>
+          </tr>
+          <tr class="ih gold" data-time="1393156800000">
+            <td class="day">23</td>
+            <td class="hour">12:00</td>
+            <td class="sport">Ice Hockey</td>
+            <td class="name">Men's Gold Medal Game</td>
+            <td class="gender"></td>
+          </tr>
+        </tbody>
+      </table>
+      <script type="text/javascript" src="jquery-1.10.2.min.js"></script>
+      <script type="text/javascript" src="bootstrap.min.js"></script>
+      <script type="text/javascript" src="tooltip.js"></script>
+      <script type="text/javascript">
+        $(document).ready( function() {
+
+          var today = new Date();
+          var now = today.getTime();
+          var $rows = $('tr');
+          var sports = ['ih', 'ss', 'st', 'fs', 'cu', 'bt', 'cc', 'sj', 'nc', 'as', 'fr', 'sb', 'bs', 'sn', 'lg'];
+          var displayed = sports;
+          var past = false;
+          var finals = false;
+
+          function Sort(sport) {
+            displayed = sports;
+            if (sport) {
+              var i = displayed.indexOf(sport);
+              if(i != -1) {
+                displayed.splice(i, 1);
+              } else {
+                displayed.push(sport);
+              }
+            }
+
+            if (past) {
+              if (finals) {
+                $rows.hide().filter('.past, .' + displayed.join(', .')).not('.none').show();
+              } else {
+                $rows.hide().filter('.past, .' + displayed.join(', .')).show();
+              }
+            } else {
+              if (finals) {
+                $rows.hide().filter('.' + displayed.join(', .')).not('.past, .none').show();
+              } else {
+                $rows.hide().filter('.' + displayed.join(', .')).not('.past').show();
+              }
+            }
+
+            console.log(past);
+          }
+
+          $rows.each( function() {
+            var eventTime = $(this).data('time');
+            if (now - eventTime > 0) {
+              $(this).addClass('past');
+            }
+          });
+
+          $('#sports .btn').click( function(){
+            $(this).toggleClass('active');
+            Sort($(this).data('sport'));
+          });
+
+          $('#past').click( function(){
+            $(this).toggleClass('active');
+            past = !past;
+            Sort();
+          });
+
+          $('#finals').click( function(){
+            $(this).toggleClass('active');
+            finals = !finals;
+            Sort();
+          });
+
+          $('.btn').tooltip();
+
+        });
+      </script>
+  </body>
+</html>

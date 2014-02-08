@@ -1,4 +1,4 @@
-sochi-2014-calendar
+Sochi 2014 Calendar
 ===================
 
-A simple calendar for the Sochi 2014 Olympics
+A simple filterable calendar for the Sochi 2014 Olympics.
