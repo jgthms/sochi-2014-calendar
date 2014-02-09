@@ -32,7 +32,7 @@
         </div>
         <div id="filters" class="btn-group btn-group-sm">
           <button id="past" type="button" class="btn btn-default" data-view="past">Show past events</button>
-          <button id="finals" type="button" class="btn btn-default" data-view="all">Show only finals</button>
+          <button id="finals" type="button" class="btn btn-default" data-view="all">Show finals only</button>
         </div>
       </div>
       <table>
@@ -902,7 +902,7 @@
 
           $rows.each( function() {
             var eventTime = $(this).data('time');
-            if (now - eventTime > 0) {
+            if (now - eventTime > 7200000) { // 2 hours
               $(this).addClass('past');
             }
           });
